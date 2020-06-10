@@ -4,8 +4,11 @@ document.getElementById("whatever").addEventListener("click", showInfo)
 function showInfo(){
     getplayer()
     document.getElementById("whatever").style.display="none"
-    
+    document.getElementById("content").style.display="block"
+    document.getElementById("king").style.display="block"
+    document.getElementById("air").style.display="block"
 }
+
 function getplayer(){
 document.getElementById("player_id").style.display="block"
     fetch("http://localhost:3000/players") 

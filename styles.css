@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    font-style: italic;
+    background-color: #bb0202;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  header h2 {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  div.card{
+    font-size: x-large;
+    font-weight: 700;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  div.input-field {
+    width: 15%;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    font-size: x-large;
+    font-weight: 700;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+  
+  }
+
+  img.lebron {
+    position: absolute;
+    top: 70px;
+    right: 450px;
+    border: 4px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+  }
+
+  img.michael {
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    border: 4px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+  }
+
+body {
+      background-image: url("https://image-cdn.essentiallysports.com/wp-content/uploads/20200403121554/Image-from-iOS-1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+  
+  
+  button {
+    font-size: .7em;
+    color: #fff;
+    background-color: red;
+    border-radius: 10px;
+  }
+
+  button.clicky {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font-size: 1em;
+    color: rgb(223, 185, 16);
+    background-color: rgb(130, 25, 187);
+    border-radius: 10px;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

@@ -1,3 +1,14 @@
+
+document.addEventListener("DOMContentLoaded", hide)
+
+
+function hide(){
+    displayNewComment()
+    document.getElementById("content").style.display="none"
+    
+
+}
+
 function displayNewComment(){
     document.getElementById("content").style.display="block"
     fetch("http://localhost:3000/comments", {

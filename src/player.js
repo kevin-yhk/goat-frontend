@@ -1,3 +1,11 @@
+document.getElementById("whatever").addEventListener("click", showInfo)
+
+
+function showInfo(){
+    getplayer()
+    document.getElementById("whatever").style.display="none"
+    
+}
 function getplayer(){
 document.getElementById("player_id").style.display="block"
     fetch("http://localhost:3000/players") 

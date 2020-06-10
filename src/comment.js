@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", hide)
 function hide(){
     displayNewComment()
     document.getElementById("content").style.display="none"
-    
+    document.getElementById("king").style.display="none"
+    document.getElementById("air").style.display="none"
 
 }
 

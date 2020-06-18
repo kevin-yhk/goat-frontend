@@ -45,6 +45,16 @@ body {
   
   }
 
+  div.form{
+    position: absolute;
+    top: 690px;
+    right: 450px;
+    border: 4px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: x-large;
+  }
+
   img.lebron {
     position: absolute;
     top: 70px;

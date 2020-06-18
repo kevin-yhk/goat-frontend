@@ -20,8 +20,15 @@
     <button id="whatever" class="clicky">"Click for More Info"</button>
 
     <div class="input-field">
-        
         <div id="content"></div>
+    </div>
+
+    <div class ="form">
+      <form id="new_comment">
+        Name: <input type="text" name = "name" id = "comment_name"><br><br>
+        Comment: <input type="text" name = "content" id = "comment_content">
+        <input type="submit" value="Add Comment">
+      </form>
     </div>
 
     
@@ -29,7 +36,9 @@
     <img src= "https://media.giphy.com/media/7Ee6I8ecvwFCU/giphy.gif" class="michael", id="air"/>
     
 
+    <script src="services/API.js"></script>
     <script src="src/player.js"></script>
     <script src="src/comment.js"></script>
+    <script src="src/index.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 // .then(response => response.text())
 // .then(response => {console.log(response) 
 
-// // displayUpdatedComment()
+// displayUpdatedComment()
 // })
 // }
 
@@ -41,7 +41,7 @@ class Comment{
                     
                 }); 
                 
-            document.getElementById("content").innerHTML += li; 
+            document.getElementById("content").innerHTML = li; 
             
         })
 
@@ -49,8 +49,10 @@ class Comment{
 
     static deleteComment(id){
         API.delete(id)
-        .then(response => {console.log(response)}) 
-        
+        .then(response => {console.log(response)
+        Comment.displayUpdatedComment()
+        }) 
+
     }
 
 

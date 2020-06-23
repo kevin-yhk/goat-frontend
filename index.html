@@ -24,10 +24,16 @@
     </div>
 
     <div class ="form">
-      <form id="new_comment">
+      <form id="new_comment" data-action="create">
         Name: <input type="text" name = "name" id = "comment_name"><br><br>
-        Comment: <input type="text" name = "content" id = "comment_content">
-        <input type="submit" value="Add Comment">
+        Comment: <input type="text" name = "content" id = "comment_content"><br><br>
+        Directed At: 
+        <select name="player_id", id="playerid">
+          <option value="3">Lebron James</option>
+          <option value="4">Michael Jordan</option>
+        </select>
+        <!-- Directed to Lebron (type 3)/Jordan (type 4) <input type="text" name = "player_id", id = "playerid"> -->
+        <input type="submit" value="Add Comment" id="sub">
       </form>
     </div>
 

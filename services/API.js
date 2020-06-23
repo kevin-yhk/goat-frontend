@@ -30,4 +30,21 @@ class API {
            .then(response => response.json())
         
     )}
+
+    static create(data){
+        return(
+            fetch(API.baseUrl + "comments",{
+            method: 'POST',
+            body: JSON.stringify({comment:data}),    
+            headers :{
+                'content-type': 'application/json',
+                "Accept": "application/json"
+
+            }
+        })
+        .then(response => response.json())
+        .then(res => {console.log(res)
+            Comment.displayUpdatedComment()})
+        )}
+        
 }
